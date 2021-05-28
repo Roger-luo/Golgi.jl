@@ -60,7 +60,7 @@ end
 
 # wrap enzyme to respect ChainRules convention
 # NOTE: we don't handle Julia callable struct
-# in Enzyme.
+# in Enzyme - until it works in Enzyme natively
 function rrule_call(::EnzymeTransform, f::Function, args...)
     f(args...), function enzyme_pullback(Δ)
         grad = Enzyme.pullback(f, args...)(Δ)
