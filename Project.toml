@@ -3,6 +3,12 @@ uuid = "3bdb92b2-91c5-4312-8f0e-0e307c1a11e7"
 authors = ["Roger-Luo <rogerluo.rl18@gmail.com> and contributors"]
 version = "0.1.0"
 
+[deps]
+ChainRules = "082447d4-558c-5d27-93f4-14fc19e9eca2"
+CompilerPluginTools = "6b7a57c9-7cc1-4fdf-b7f5-e857abae3638"
+Enzyme = "7da242da-08ed-463a-9acd-ee780be4f1d9"
+Zygote = "e88e6eb3-aa80-5325-afca-941959d7151f"
+
 [compat]
 julia = "1"
 
